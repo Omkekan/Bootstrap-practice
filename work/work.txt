@@ -1,1 +1,10 @@
 Bootstrap is a html css js framework
+it provides built in classes
+it is used to make web application good looking attractive mobile friendly responsive
+bootstrap 5 is the current latest version
+how to use bootstrap:
+there are 2 ways
+1. by using CDN link(content delivery network).
+    internet connection is required.
+    
+2. by downloading
