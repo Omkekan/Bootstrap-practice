@@ -6,5 +6,9 @@ how to use bootstrap:
 there are 2 ways
 1. by using CDN link(content delivery network).
     internet connection is required.
-    
+
 2. by downloading
+
+-container classes
+.container: it apply 15 px margin from left adn right side of it
+.container-fluid: 
