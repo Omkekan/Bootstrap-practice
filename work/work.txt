@@ -12,3 +12,30 @@ there are 2 ways
 -container classes
 .container: it apply 15 px margin from left adn right side of it
 .container-fluid: 
+
+
+declaration of variable
+var, let, const, keyword
+
+-var: it create function scope variable, we can use variable before declaration of it and 
+we can perform re declaration of variables
+
+-let: it create block scope variable
+we can not use variable before declaration of it
+we can not perform re declaration of variable
+
+-const: it create constant variable whose value can not change during runtime
+at the time variable declaration we have to initialize variable
+
+
+hoisting: it is a default js behaviour which moves variable declaration at the top of the page
+
+
+when we declare a variable in java script 
+at the same time we cannot decide or determine its datatype until and unless we initialize it
+
+in js wee can assign different data in same variable 
+that's why its called as loosly typed language.
+
+built in datatype
+null
