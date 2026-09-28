@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Jquery</title>
+</head>
+<body>
+    <img id="1" src="../Assets/burgur.jpg" alt="burgur" width="400px"><br>
+    <button type="button" id="hidebtn">hidebtn</button>
+    <button type="button" id="showbtn">showbtn</button>
+    <button type="button" id="togglebtn">togglebtn</button>
+
+
+    <script>
+        $(document).ready(function (){
+            $("#hidebtn").click(()=>{$("#1").hide()});
+            $("#showbtn").click(()=>{$("#1").show()});
+            $("#togglebtn").click(()=>{$("#1").toggle(3000)});
+        });
+    </script>
+</body>
+</html>
