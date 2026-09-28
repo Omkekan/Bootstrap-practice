@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment5</title>
+    <style>
+        .img1{
+            border: 2px solid;
+            height: 300px;
+            width: 300px;
+            
+        }
+        .dive{
+            height: 300px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+        }
+    </style>
+</head>
+<body>
+    <div  class="dive">
+        <img id="1" class="img1" src="../Assets/burgur.jpg" alt="burgur"><br>
+        
+    </div>
+    <div  align="center"><h2 id="2">Burgur</h2></div>
+
+    <div align="center">
+        <button onclick="changeimg1(); changehed1()">cold coffee</button>
+        <button onclick="changeimg2(); changehed2()">ice cream</button>
+        <button onclick="changeimg3(); changehed3()">pancake</button>
+
+    </div>
+
+<hr>
+    <div  class="dive">
+        <img id="3" class="img1" src="../Assets/paneer.jpg" alt="paneer"><br> 
+    </div>
+    <div  align="center"><h2 id="4">paneer</h2></div>
+    <div align="center"><button  onclick="toggleimg()">click to change img</button></div>
+
+<script>
+    function changeimg1(){
+        const img = document.getElementById("1");
+        img.src ="../Assets/cold coffee.jpg";
+        img.alt = "cold coffee";
+    }
+    function changeimg2(){
+        const img = document.getElementById("1");
+        img.src ="../Assets/ice ceram.jpg";
+        img.alt = "ice cream";
+    }
+    function changeimg3(){
+        const img = document.getElementById("1");
+        img.src ="../Assets/pancake.jpg";
+        img.alt = "pancake";
+    }
+
+    function changehed1(){
+        const heading = document.getElementById("2");
+        heading.textContent = "cold coffee";
+
+    }
+    function changehed2(){
+        const heading = document.getElementById("2");
+        heading.textContent = "ice cream";
+
+    }
+    function changehed3(){
+        const heading = document.getElementById("2");
+        heading.textContent = "pancake";
+
+    }
+
+    function toggleimg(){
+        const img = document.getElementById("3");
+        const name = document.getElementById("4");
+        if(img.src.includes("paneer.jpg")){
+            img.src = "../Assets/pizza.jpg";
+            img.alt = "pizza";
+            name.textContent = "pizza";
+        }
+        
+        else{
+            img.src = "../Assets/paneer.jpg";
+            img.alt = "paneer";
+            name.textContent = "paneer";
+        }
+    }
+
+</script>
+</body>
+</html>
