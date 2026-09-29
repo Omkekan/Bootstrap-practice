@@ -1,7 +1,9 @@
-
+import validator from 'validator';
 import chalk from 'chalk';
 
 const log = console.log;
+const errorMSG= chalk.bold.red.underline;
+const successMSG= chalk.bold.green.underline;
 
 // Combine styled and normal strings
 log(chalk.blue('Hello') + ' World' + chalk.red('!'));
@@ -32,3 +34,7 @@ DISK: ${chalk.yellow('70%')}
 // Use RGB colors in terminal emulators that support it.
 log(chalk.rgb(123, 45, 67).underline('Underlined reddish color'));
 log(chalk.hex('#DEADED').bold('Bold gray!'));
+
+log(successMSG("YOU COMPLETED IT!!!!"));
+log(errorMSG("YOU FAILD......."));
+
