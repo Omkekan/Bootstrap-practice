@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>CSS</title>
+    <style>
+        .box{
+            border: 2px solid;
+            position: relative;
+            height: 200px;
+            width: 200px;
+            text-align: center;
+            background-color: #722F37;
+        }
+    </style>
+</head>
+<body>
+    
+    <p id="d1">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Voluptas esse, rerum voluptatem quasi animi hic, molestiae officia, excepturi corrupti vel laborum. 
+        Ipsum, sint. Incidunt adipisci vel a vitae debitis quaerat!</p>
+    <div><img id="d2" src="../Assets/burgur.jpg" alt="" width="400px"></div>
+    <button type="button" id="btn2">fadeout</button>
+    <button type="button" id="btn1">fadein</button>
+    <button type="button" id="btn3">fadetoggle</button>
+    <div><img id="d3" src="../Assets/pancake.jpg" alt="" width="400px"></div>
+    
+    <div class="box">
+        hello frands
+    </div>
+
+
+    <script>
+        $(document).ready(function (){
+            //text
+            $("#d1").mouseenter(function(){
+            $(this).css({"color":"blue", "background-color":"aqua","font-size":"20px"})});
+
+            $("#d1").mouseenter(function(){
+            $(this).css({"color":"red", "background-color":"grey","font-size":"25px"})});
+            
+            //circle
+            $("#d2").mouseenter(function(){
+            $(this).css({"border":"black, solid, 2px", "border-radius":"50%"})});
+            
+            //fade
+            $("#btn1").click(()=>{
+            $("#d3").fadeIn(5000)});
+
+            $("#btn2").click(()=>{
+            $("#d3").fadeOut(5000)});
+
+            $("#btn3").click(()=>{
+            $("#d3").fadeToggle(5000)});
+
+            //animation
+            $(".box").click(function(){
+            $(this).animate({"left": "400px", "border-radius": "50%"},4000)});
+        });
+    </script>
+</body>
+</html>
